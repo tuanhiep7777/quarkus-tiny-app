@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_quarkus_tiny_app_1695485275154-push-trigger-input-set
+  identifier: Build_quarkus_tiny_app_1695485275154pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_quarkus_tiny_app_1695485275154
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
