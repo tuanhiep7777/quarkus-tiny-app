@@ -24,6 +24,13 @@ pipeline:
                     command: echo hello world
                   timeout: ""
                   type: Run
+              - step:
+                  type: Run
+                  name: Build App
+                  identifier: Build_App
+                  spec:
+                    shell: Sh
+                    command: ./gradlew build -Dquarkus.package.type=native
           platform:
             arch: Amd64
             os: Linux
